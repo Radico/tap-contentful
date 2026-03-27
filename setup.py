@@ -11,9 +11,9 @@ setup(
     py_modules=["tap_contentful"],
     python_requires=">=3.9",
     install_requires=[
-        "singer-python>=6,<7",
-        "requests>=2.31,<3",
-        "pendulum>=3,<4",
+        "singer-python==6.1.1",
+        "requests==2.32.3",
+        "pendulum==3.0.0",
         "tap-kit @ git+https://github.com/Radico/tap-kit.git@main",
     ],
     entry_points="""
