@@ -9,14 +9,12 @@ setup(
     url="http://simondata.com",
     classifiers=["Programming Language :: Python :: 3 :: Only"],
     py_modules=["tap_contentful"],
+    python_requires=">=3.9",
     install_requires=[
-        "singer-python==5.2.0",
-        "requests==2.18.4",
-        "pendulum==1.2.0",
-        "tap-kit @ git+https://github.com/dmzobel/tap-kit.git@main"
-    ],
-    dependency_links=[
-        "https://github.com/dmzobel/tap-kit/tarball/main#egg=tap-kit-0.1.1",
+        "singer-python>=6,<7",
+        "requests>=2.31,<3",
+        "pendulum>=3,<4",
+        "tap-kit @ git+https://github.com/Radico/tap-kit.git@main",
     ],
     entry_points="""
     [console_scripts]
